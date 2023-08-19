@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+:root {
+  --blue: #0F4057;
+  --lgrey: #D4D2D5;
+  --dgrey: #1F1F1F;
+  --header: Slabo,serif;
+  --body1: Dosis,sans-serif;
+  --body2: Saraburn,sans-serif;
+  --script: 'Bad Script',cursive;
+}
