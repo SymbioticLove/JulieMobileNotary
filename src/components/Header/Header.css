@@ -6,9 +6,10 @@
   left: 0;
   right: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   user-select: none;
   transition: all 0.5s ease;
+  padding: 0 1rem;
 }
 
 .shadow {
@@ -21,6 +22,7 @@
   justify-content: center;
   display: flex;
   transition: all 0.3s ease;
+  margin-right: 1rem;
 }
 
 .logo:hover {
@@ -29,6 +31,11 @@
 
 .logo img {
   border-radius: 50%;
+  animation: logoFade 0.5s ease-in-out;
+}
+
+.title {
+  display: flex;
 }
 
 .title p,
@@ -45,8 +52,17 @@
 
 .title p {
   font-size: 1.5rem;
-  margin-top: 0;
-  text-align: right;
+  margin: 0;
+  text-align: left;
   font-family: var(--body1);
   letter-spacing: 0.1rem;
+}
+
+@keyframes logoFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
