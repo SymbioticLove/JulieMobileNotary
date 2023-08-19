@@ -7,10 +7,46 @@
   right: 0;
   display: flex;
   justify-content: space-around;
+  user-select: none;
+  transition: all 0.5s ease;
+}
+
+.shadow {
+  box-shadow: 0 0 10px #000;
+  border-radius: 0 0 50px 50px;
 }
 
 .logo {
   align-items: center;
   justify-content: center;
   display: flex;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo img {
+  border-radius: 50%;
+}
+
+.title p,
+.title h1 {
+  color: var(--lgrey);
+}
+
+.title h1 {
+  font-size: 3rem;
+  font-family: var(--script);
+  margin-bottom: 0;
+  letter-spacing: 0.15rem;
+}
+
+.title p {
+  font-size: 1.5rem;
+  margin-top: 0;
+  text-align: right;
+  font-family: var(--body1);
+  letter-spacing: 0.1rem;
 }
