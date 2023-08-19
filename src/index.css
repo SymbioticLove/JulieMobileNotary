@@ -8,11 +8,11 @@ html {
 }
 
 :root {
-  --blue: #0F4057;
-  --lgrey: #D4D2D5;
-  --dgrey: #1F1F1F;
-  --header: Slabo,serif;
-  --body1: Dosis,sans-serif;
-  --body2: Saraburn,sans-serif;
-  --script: 'Bad Script',cursive;
+  --blue: #0f4057;
+  --lgrey: #d4d2d5;
+  --dgrey: #1f1f1f;
+  --header: Slabo, serif;
+  --body1: Dosis, sans-serif;
+  --body2: Saraburn, sans-serif;
+  --script: 'Bad Script', cursive;
 }
