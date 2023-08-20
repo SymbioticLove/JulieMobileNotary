@@ -35,12 +35,12 @@ const Header = () => {
       if (currentLetterIndex === 0) {
         typingTimer = setTimeout(() => {
           setCurrentLetterIndex(1);
-        }, 500);
+        }, 1000);
       } else {
         typingTimer = setTimeout(() => {
           setTypedSubtitle(headerSubtitle.substring(0, currentLetterIndex));
           setCurrentLetterIndex(prevIndex => prevIndex + 1);
-        }, 85);
+        }, 100);
       }
 
       return () => clearTimeout(typingTimer);

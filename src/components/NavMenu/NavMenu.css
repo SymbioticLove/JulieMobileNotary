@@ -4,17 +4,20 @@
   flex-direction: column;
   height: 80%;
   justify-content: space-around;
+  transition: all 0.3s ease;
 }
 
 .nav-menu ul li {
   text-align: right;
   font-size: 1.5rem;
   font-family: var(--body1);
+  transition: all ease .3s;
 }
 
 .nav-menu ul li a {
   text-decoration: none;
   color: var(--lgrey);
+  transition: all ease .3s;
 }
 .nav-menu ul li a:hover {
   color: #bd6fdb;
@@ -29,6 +32,10 @@
   align-items: center;
   margin: 0;
   height: 100%;
+}
+
+.nav-menu-bar ul li:hover {
+  margin-bottom: 0.75rem;
 }
 
 .nav-menu-bar ul li a:hover {

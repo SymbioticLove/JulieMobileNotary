@@ -9,6 +9,7 @@
   user-select: none;
   transition: all 0.3s ease;
   padding: 0 1rem;
+  animation: headerFade 0.5s ease-in-out;
 }
 
 .shadow {
@@ -30,7 +31,6 @@
 
 .logo img {
   border-radius: 50%;
-  animation: logoFade 0.5s ease-in-out;
   transition: all 0.3s ease;
   height: 200px;
   width: 200px;
@@ -80,7 +80,7 @@
   display: flex;
 }
 
-@keyframes logoFade {
+@keyframes headerFade {
   from {
     opacity: 0;
   }
