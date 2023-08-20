@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import './Header.css';
+import NavMenu from '../NavMenu/NavMenu';
 
 const Header = () => {
   const { headerTitle, headerSubtitle } = useSelector(
@@ -39,7 +40,7 @@ const Header = () => {
         typingTimer = setTimeout(() => {
           setTypedSubtitle(headerSubtitle.substring(0, currentLetterIndex));
           setCurrentLetterIndex(prevIndex => prevIndex + 1);
-        }, 100);
+        }, 85);
       }
 
       return () => clearTimeout(typingTimer);
@@ -48,8 +49,8 @@ const Header = () => {
 
   return (
     <div className={`header-container ${isScrolled ? 'shadow' : ''}`}>
-      <div className="title">
-        <div className="logo">
+      <div className={`title ${isScrolled ? 'bar-title' : ''}`}>
+        <div className={`logo ${isScrolled ? 'bar-logo' : ''}`}>
           <img src="https://placehold.co/150" alt="RSS Logo" />
         </div>
         <div>
@@ -57,7 +58,9 @@ const Header = () => {
           <p>{typedSubtitle}</p>
         </div>
       </div>
-      <div className="nav-menu"></div>
+      <div className="nav-menu-container">
+        <NavMenu isScrolled={isScrolled} />
+      </div>
     </div>
   );
 };

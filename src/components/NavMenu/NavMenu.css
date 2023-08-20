@@ -1,0 +1,36 @@
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: space-around;
+}
+
+.nav-menu ul li {
+    text-align: right;
+    font-size: 1.5rem;
+    font-family: var(--body1);
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: var(--lgrey);
+}
+.nav-menu ul li a:hover {
+    color: #bd6fdb;
+    margin-right: .5rem;
+}
+
+.nav-menu-bar ul {
+    flex-direction: row;
+    gap: 2rem;
+    padding-inline-start: 0;
+    padding-right: 1rem;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+}
+
+.nav-menu-bar ul li a:hover {
+    margin-right: 0;
+}
