@@ -48,7 +48,7 @@
   cursor: pointer;
   background: var(--blue);
   box-shadow: none;
-  transform: scale(.97);
+  transform: scale(0.97);
 }
 
 .contact {

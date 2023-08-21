@@ -1,63 +1,63 @@
 .about-container {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .about-text-container {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .seal {
-    max-width: 100%;
-    margin-left: 2rem;
-    transition: ease all 0.3s;
-    border-radius: 15px;
+  max-width: 100%;
+  margin-left: 2rem;
+  transition: ease all 0.3s;
+  border-radius: 15px;
 }
 
 .pic-row {
-    width: 20%;
-    transition: ease all 0.3s;
-    border-radius: 15px;
+  width: 20%;
+  transition: ease all 0.3s;
+  border-radius: 15px;
 }
 
 .harley:hover,
 .seal:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 10px #000;
+  transform: scale(1.03);
+  box-shadow: 0 0 10px #000;
 }
 
 .about-container div {
-    display: flex;
+  display: flex;
 }
 
 .about-center {
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-around {
-    align-items: center;
-    justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .about-container h2 {
-    font-size: 3rem;
-    font-family: var(--script);
-    color: var(--blue);
-    letter-spacing: .1rem;
-    text-align: center;
-    margin: 3rem 0 1rem;
+  font-size: 3rem;
+  font-family: var(--script);
+  color: var(--blue);
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin: 3rem 0 1rem;
 }
 
 .about-container p {
-    font-size: 1.5rem;
-    font-family: var(--body1);
-    padding: 2rem 4rem;
-    line-height: 1.75;
-    color: var(--dgrey);
-    margin-top: 0;
+  font-size: 1.5rem;
+  font-family: var(--body1);
+  padding: 2rem 4rem;
+  line-height: 1.75;
+  color: var(--dgrey);
+  margin-top: 0;
 }
 
 .about-text-container p:last-child {
-    text-align: center;
-    padding-top: 0;
+  text-align: center;
+  padding-top: 0;
 }

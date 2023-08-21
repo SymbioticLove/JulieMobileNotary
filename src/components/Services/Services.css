@@ -1,75 +1,75 @@
 .fees-wrapper {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 3rem;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 3rem;
 }
 
 .meeting {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
 }
 
 .fees h3,
 .fees h2,
 .meeting h2 {
-    color: var(--blue);
-    font-family: var(--script);
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 0;
-    letter-spacing: .1rem;
+  color: var(--blue);
+  font-family: var(--script);
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0;
+  letter-spacing: 0.1rem;
 }
 
 .fees p,
 .meeting p {
-    color: var(--dgrey);
-    font-family: var(--body1);
-    font-size: 1.5rem;
-    margin-top: 0;
-    text-align: center;
-    padding: 0 2rem;
+  color: var(--dgrey);
+  font-family: var(--body1);
+  font-size: 1.5rem;
+  margin-top: 0;
+  text-align: center;
+  padding: 0 2rem;
 }
 
 .meeting p {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 .meeting img {
-    max-width: 400px;
-    border-radius: 20px;
-    transition: all ease 0.3s;
+  max-width: 400px;
+  border-radius: 20px;
+  transition: all ease 0.3s;
 }
 
 .meeting img:hover {
-    box-shadow: 0 0 15px #000;
-    transform: scale(1.02);
+  box-shadow: 0 0 15px #000;
+  transform: scale(1.02);
 }
 
 .fee-container {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .surcharges {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .fee-container div {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 .fees h3 {
-    font-size: 2rem;
-    margin-top: 0;
-    font-family: var(--body1);
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-top: 0;
+  font-family: var(--body1);
+  margin-bottom: 1rem;
 }
 
 .fees p {
-    font-family: var(--body1);
+  font-family: var(--body1);
 }
