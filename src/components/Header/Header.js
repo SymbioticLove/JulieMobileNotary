@@ -51,7 +51,7 @@ const Header = () => {
     <div className={`header-container ${isScrolled ? 'shadow' : ''}`}>
       <div className={`title ${isScrolled ? 'bar-title' : ''}`}>
         <div className={`logo ${isScrolled ? 'bar-logo' : ''}`}>
-          <img src="https://placehold.co/150" alt="RSS Logo" />
+          <img src="https://placehold.co/200" alt="RSS Logo" />
         </div>
         <div>
           <h1>{headerTitle}</h1>

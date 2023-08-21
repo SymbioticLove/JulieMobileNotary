@@ -8,5 +8,57 @@
       "requestQuote": "Request a Quote",
       "serviceFees": "Services and Fees",
       "faq": "FAQs"
+   },
+   "hero": {
+      "counties": "Serving the Counties of Collin, Denton, Dallas, Hunt, and Grayson",
+      "heroText": "Experience the utmost convenience with Remote Signing Services. Whether you're at home, in your office, or having a cup of coffee, my mobile notary services are designed to cater to your needs. From real estate documents to notarization, I provide seamless and efficient services. To request a quote, fill out the form below! Contact me at remotesigningservices@gmail.com or give me a call at (214)616-4549 with any questions or concerns."
+   },
+   "services": {
+      "meetTitle": "Meeting Locations",
+      "meetText": "Meeting locations can include businesses, libraries, hospitals, nursing homes, restaurants, coffee shops, lobbies, and even your home! No matter your location, I am dedicated to bringing notary services to you wherever you are. My commitment to providing accessible and flexible service means that your convenience is my priority. With Remote Signing Services, you can expect a seamless experience that caters to your unique needs.",
+      "serviceTitle": "Services",
+      "serviceText": "Services provided range from oaths to affirmations to real estate closings, with the added convenience of having a professional notary office available to you outside of regular business hours or during your travels. With a commitment to reliability, friendliness, and punctuality, my attention to detail ensures that your needs are met accurately the first time. Whether you require a simple single document notarization or a more intricate task like a real estate closing, Remote Signing Services is here to fulfill your needs. Please don't hesitate to request a quote or reach out to me!",
+      "feesTitle": "Fees",
+      "feesSubtitle1": "Notary Services",
+      "notaryFees": [
+         "$6 - First Signature",
+         "+$1 - Each Additional Signature",
+         "$6 - Administering an Oath/Affirmation"
+      ],
+      "feesSubtitle2": "Real Estate Signing",
+      "estateFees": [
+         "$125 - Purchase (Buyer or Seller)",
+         "$150 - Refinances & Reverse Mortgages"
+      ],
+      "feesSubtitle3": "Additional Surcharges",
+      "surcharges": [
+         "$40 - Base Travel Fee Within 15 Miles of 75071",
+         "+$1 - Each Additional Mile > 15 Miles",
+         "$25 - After Hours Surcharge (after 6pm)",
+         "$50 - Immediate Service"
+      ]
+   },
+   "faq": {
+      "title": "Frequently Asked Questions",
+      "what": "What does a Notary do?",
+      "whatAnswer": "The responsibility of a notary in Texas extends to verifying the identity of signers for significant documents, ensuring their voluntary agreement without any undue pressure, and confirming their understanding of the document's purpose. In specific instances, notaries are also required to administer an oath, compelling signers to attest, under threat of legal consequences, to the accuracy and authenticity of the document's contents.",
+      "noid": "What if I don't have a valid ID?",
+      "noidAnswer": "In cases where a government-issued photo ID is unavailable, the requirement entails presenting TWO reliable witnesses possessing valid IDs. These witnesses must affirm their personal familiarity with you and validate your identity as the individual named in the document.",
+      "length": "How long does an appointment take?",
+      "lengthAnswer": "The duration is contingent upon the quantity of documents and signatures necessitating notarization. Generally, the majority of notarizations conclude within 30 minutes, while real estate signings may span around an hour. Upon scheduling your appointment, I can furnish you with an approximate timeframe.",
+      "late": "Can I make an appointment on weekends or after hours?",
+      "lateAnswer": "Certainly, I am available for notarizations every day of the week. My standard hours are from 8am to 6pm, Monday through Friday, and from 9am to 6pm on weekends. However, I can make arrangements for additional time slots, subject to availability.",
+      "re": "Can I reschedule an appointment?",
+      "reAnswer": "Absolutely, life happens! Appointments can be rescheduled without incurring any extra charges up to 30 minutes before the scheduled time. If rescheduling within the last 30 minutes, I may already be en route. In such cases, kindly reach out to me at (214)616-4549."
+   },
+   "about": {
+      "aboutTitle": "Meet Julie Nichols, a Mobile Notary Professional",
+      "aboutText": [
+         "Beyond her extensive expertise, Julie's life is colored by her roles as a grandma, a Harley aficionado, and a devoted dog lover. With two decades of experience in Mortgage Loans, Julie approaches every task with a keen eye for detail and a deep understanding of the industry's intricacies. Off the clock, you'll find Julie embracing her inner adventurer as she hits the open road on her Harley Softail or enjoying a relaxying sunset on the beach. The wind in her hair and the rumble of the engine serve as a testament to her free spirit and zest for life. Julie's passion for her work is matched only by her affection for her furry companion. Her dog is a constant reminder of the importance of loyalty and companionship, values that she brings into every client interaction.",
+         "In choosing Julie Nichols for your mobile notary needs, you're not only opting for a seasoned professional but also inviting the warmth of a grandma, the thrill of a Harley rider, and the sincerity of a devoted dog lover into your experience. "
+      ]
+   },
+   "disclaimer": {
+      "disclaimer": "I am not an attorney licensed to practice law in Texas and may not give legal advice or accept fees for legal advice"
    }
 }

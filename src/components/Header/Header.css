@@ -10,6 +10,7 @@
   transition: all 0.3s ease;
   padding: 0 1rem;
   animation: headerFade 0.5s ease-in-out;
+  z-index: 10000;
 }
 
 .shadow {

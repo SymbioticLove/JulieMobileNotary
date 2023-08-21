@@ -1,4 +1,62 @@
 .hero-container {
-  height: 100vh;
-  background: linear-gradient(to bottom, var(--blue) 25%, var(--lgrey) 100%);
+  height: 75vh;
+  padding-top: 25vh;
+  background: var(--lgrey);
+  background-image: url(../../../public/business.jpg);
+  background-size: cover;
+  background-blend-mode: screen;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-container h3 {
+  margin: 1rem 1rem 0;
+  color: var(--blue);
+  font-size: 2.25rem;
+  letter-spacing: 0.1rem;
+  font-family: var(--body1);
+  font-weight: normal;
+}
+
+.text-container {
+  font-family: var(--body1);
+  font-size: 2rem;
+  color: var(--dgrey);
+  padding: 3%;
+  text-align: right;
+  line-height: 2;
+  margin-top: 3rem;
+}
+
+.text-container button {
+  margin: 1rem;
+  min-height: 60px;
+  min-width: 150px;
+  background: var(--dgrey);
+  color: var(--lgrey);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  font-family: var(--script);
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  transition: all ease 0.3s;
+  box-shadow: 0 0 10px #000;
+}
+
+.text-container button:hover {
+  cursor: pointer;
+  background: var(--blue);
+  box-shadow: none;
+  transform: scale(.97);
+}
+
+.contact {
+  text-decoration: none;
+  color: var(--blue);
+  transition: all ease 0.3s;
+}
+
+.contact:hover {
+  color: var(--accent);
 }

@@ -1,7 +1,6 @@
 body {
   margin: 0;
   background: var(--lgrey);
-  height: 200vh;
 }
 
 html {
@@ -12,6 +11,7 @@ html {
   --blue: #0f4057;
   --lgrey: #d4d2d5;
   --dgrey: #1f1f1f;
+  --accent: #bd6fdb;
   --header: Slabo, serif;
   --body1: Dosis, sans-serif;
   --body2: Saraburn, sans-serif;
