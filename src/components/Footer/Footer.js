@@ -44,7 +44,7 @@ const Footer = () => {
       <div className="payment-images">
         <h4>Payments accepted through...</h4>
         <img
-          src={process.env.PUBLIC_URL + './ca_logo.svg'}
+          src={process.env.PUBLIC_URL + '/ca_logo.svg'}
           alt="Cash App logo"
           className="ca-logo"
         />
@@ -54,12 +54,12 @@ const Footer = () => {
           className="pp-logo"
         />
         <img
-          src={process.env.PUBLIC_URL + './Venmo_Logo_White.png'}
+          src={process.env.PUBLIC_URL + '/Venmo_Logo_White.png'}
           alt="Venmo logo"
           className="ven-logo"
         />
         <img
-          src={process.env.PUBLIC_URL + './Zelle_logo.png'}
+          src={process.env.PUBLIC_URL + '/Zelle_logo.png'}
           alt="Zelle logo"
           className="z-logo"
         />

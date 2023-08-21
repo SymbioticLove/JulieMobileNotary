@@ -28,7 +28,7 @@ const Services = () => {
           <h2>{meetTitle}</h2>
           <p>{meetText}</p>
           <img
-            src={process.env.PUBLIC_URL + './coffee.jpg'}
+            src={process.env.PUBLIC_URL + '/coffee.jpg'}
             alt="Meeting Locations"
           />
         </div>
@@ -36,7 +36,7 @@ const Services = () => {
           <h2>{serviceTitle}</h2>
           <p>{serviceText}</p>
           <img
-            src={process.env.PUBLIC_URL + './handshake.jpg'}
+            src={process.env.PUBLIC_URL + '/handshake.jpg'}
             alt="Meeting Locations"
           />
         </div>
