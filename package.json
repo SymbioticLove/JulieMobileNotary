@@ -2,6 +2,7 @@
   "name": "remote-signing-services",
   "version": "0.5.0",
   "private": false,
+  "homepage": "https://symbioticlove.github.io/JulieMobileNotary/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
