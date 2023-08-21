@@ -5,6 +5,7 @@
   height: 80%;
   justify-content: space-around;
   transition: all 0.3s ease;
+  padding-inline-start: 0;
 }
 
 .nav-menu ul li {
@@ -40,4 +41,10 @@
 
 .nav-menu-bar ul li a:hover {
   margin-right: 0;
+}
+
+@media only screen and (max-width: 1068px) {
+  .nav-menu ul li {
+    font-size: 1.1rem;
+  }
 }

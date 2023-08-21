@@ -26,12 +26,14 @@ const Hero = () => {
       </div>
       <div className="text-container">
         <p dangerouslySetInnerHTML={{ __html: formattedHeroText }} />
-        <a href={emailLink} alt="Email Me">
-          <button>Email Me</button>
-        </a>
-        <a href={phoneLink} alt="Call Me">
-          <button>Call Me</button>
-        </a>
+        <div className="phone">
+          <a href={emailLink} alt="Email Me">
+            <button>Email Me</button>
+          </a>
+          <a href={phoneLink} alt="Call Me">
+            <button>Call Me</button>
+          </a>
+        </div>
       </div>
     </div>
   );

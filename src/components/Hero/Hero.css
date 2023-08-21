@@ -60,3 +60,37 @@
 .contact:hover {
   color: var(--accent);
 }
+
+@media only screen and (max-width: 1068px) {
+  .hero-container {
+    padding-top: 2rem;
+  }
+
+  .hero-container h3 {
+    font-size: 2rem;
+  }
+
+  .text-container {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-container {
+    height: initial;
+  }
+  .hero-container h3 {
+    font-size: 1.5rem;
+  }
+
+  .text-container {
+    font-size: 1.25rem;
+    margin-top: 0;
+    line-height: 1.2;
+  }
+
+  .phone {
+    display: flex;
+    padding-bottom: 1rem;
+  }
+}

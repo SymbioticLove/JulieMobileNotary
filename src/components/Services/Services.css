@@ -38,7 +38,7 @@
 }
 
 .meeting img {
-  max-width: 400px;
+  max-width: 90%;
   border-radius: 20px;
   transition: all ease 0.3s;
 }
@@ -72,4 +72,19 @@
 
 .fees p {
   font-family: var(--body1);
+}
+
+@media only screen and (max-width: 1068px) {
+  .fees-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fee-container {
+    flex-direction: column;
+  }
+
+  .meeting {
+    width: 90%;
+  }
 }

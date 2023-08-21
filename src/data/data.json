@@ -11,7 +11,7 @@
    },
    "hero": {
       "counties": "Serving the Counties of Collin, Denton, Dallas, Hunt, and Grayson",
-      "heroText": "Experience the utmost convenience with Remote Signing Services. Whether you're at home, in your office, or having a cup of coffee, my mobile notary services are designed to cater to your needs. From real estate documents to notarization, I provide seamless and efficient services. To request a quote, fill out the form below! Contact me at remotesigningservices@gmail.com or give me a call at (214)616-4549 with any questions or concerns."
+      "heroText": "Experience the utmost convenience with Remote Signing Services. Whether you're at home, in your office, or having a cup of coffee, my mobile notary services are designed to cater to your needs. From real estate documents to notarization, I provide seamless and efficient service. To request a quote, fill out the form below! Contact me at remotesigningservices@gmail.com or give me a call at (214)616-4549 with any questions or concerns."
    },
    "services": {
       "meetTitle": "Meeting Locations",
@@ -54,8 +54,17 @@
    "about": {
       "aboutTitle": "Meet Julie Nichols, a Mobile Notary Professional",
       "aboutText": [
-         "Beyond her extensive expertise, Julie's life is colored by her roles as a grandma, a Harley aficionado, and a devoted dog lover. With two decades of experience in Mortgage Loans, Julie approaches every task with a keen eye for detail and a deep understanding of the industry's intricacies. Off the clock, you'll find Julie embracing her inner adventurer as she hits the open road on her Harley Softail or enjoying a relaxying sunset on the beach. The wind in her hair and the rumble of the engine serve as a testament to her free spirit and zest for life. Julie's passion for her work is matched only by her affection for her furry companion. Her dog is a constant reminder of the importance of loyalty and companionship, values that she brings into every client interaction.",
+         "Beyond her extensive expertise, Julie's life is colored by her roles as a grandma, a Harley aficionado, and a devoted dog lover. With two decades of experience in Mortgage Loans, Julie approaches every task with a keen eye for detail and a deep understanding of the industry's intricacies. Off the clock, you'll find Julie embracing her inner adventurer as she hits the open road on her Harley Softail or enjoying a relaxying sunset on the beach. The wind in her hair and the rumble of the engine serve as a testament to her free spirit and zest for life. Julie's passion for her work is matched only by her affection for her furry companion. Her dog, Bailey, is a constant reminder of the importance of loyalty and companionship, values that she brings into every client interaction.",
          "In choosing Julie Nichols for your mobile notary needs, you're not only opting for a seasoned professional but also inviting the warmth of a grandma, the thrill of a Harley rider, and the sincerity of a devoted dog lover into your experience. "
+      ]
+   },
+   "footer": {
+      "copyright": [
+         "Website design and code © Matthew Ford, 2023",
+         "Remote Signing Services and all related logos, colors, etc. © Julia Nichols, 2023",
+         "All symbols, including but not limited to those of Cash App, Zelle, PayPal, and Venmo, are property of their respective owners and are used with permission",
+         "The photos on this site are either wholly owned or are used with permission and do not require individual attribution",
+         "Julie C. Nichols, Certified Notary Public, TX Notary ID #13443153-2"
       ]
    },
    "disclaimer": {

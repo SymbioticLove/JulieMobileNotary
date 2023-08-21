@@ -8,6 +8,7 @@ import ContactForm from './components/ContactForm/ContactForm';
 import Services from './components/Services/Services';
 import AccordionQuestions from './components/AccordionQuestions/AccordionQuestions';
 import About from './components/About/About';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Services />
         <AccordionQuestions />
         <About />
+        <Footer />
       </Provider>
     </div>
   );

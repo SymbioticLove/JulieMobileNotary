@@ -35,8 +35,10 @@
 }
 
 .about-around {
+  display: flex;
   align-items: center;
   justify-content: space-around;
+  padding-bottom: 2rem;
 }
 
 .about-container h2 {
@@ -60,4 +62,42 @@
 .about-text-container p:last-child {
   text-align: center;
   padding-top: 0;
+}
+
+@media only screen and (max-width: 1068px) {
+  .about-container div {
+    flex-direction: column;
+  }
+
+  .about-around {
+    flex-direction: row;
+  }
+
+  .about-container p {
+    text-align: center;
+  }
+
+  .seal {
+    max-width: 80%;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-container h2 {
+    font-size: 2rem;
+  }
+
+  .about-container p {
+    padding: 2rem;
+  }
+
+  .about-around {
+    flex-wrap: wrap;
+    margin: 1rem;
+  }
+
+  .pic-row {
+    width: 50%;
+  }
 }

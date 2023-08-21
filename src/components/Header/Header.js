@@ -13,10 +13,12 @@ const Header = () => {
   const [currentLetterIndex, setCurrentLetterIndex] = useState(0);
 
   const handleScroll = () => {
-    if (window.scrollY > 50) {
-      setIsScrolled(true);
-    } else {
-      setIsScrolled(false);
+    if (window.innerWidth >= 1068) {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
     }
   };
 

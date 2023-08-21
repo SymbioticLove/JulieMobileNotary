@@ -1,7 +1,7 @@
 {
-  "name": "react-flask-framework",
-  "version": "0.1.0",
-  "private": true,
+  "name": "remote-signing-services",
+  "version": "0.5.0",
+  "private": false,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",

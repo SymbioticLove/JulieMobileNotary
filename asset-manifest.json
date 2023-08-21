@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b448afac.css",
+    "main.js": "/static/js/main.d5690b02.js",
+    "static/js/787.ce35c262.chunk.js": "/static/js/787.ce35c262.chunk.js",
+    "static/media/signature-contract.jpg": "/static/media/signature-contract.21ec46cb695d0794664f.jpg",
+    "static/media/business.jpg": "/static/media/business.3df75faa9dad0b7bbb65.jpg",
+    "index.html": "/index.html",
+    "main.b448afac.css.map": "/static/css/main.b448afac.css.map",
+    "main.d5690b02.js.map": "/static/js/main.d5690b02.js.map",
+    "787.ce35c262.chunk.js.map": "/static/js/787.ce35c262.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b448afac.css",
+    "static/js/main.d5690b02.js"
+  ]
+}
