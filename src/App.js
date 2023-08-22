@@ -13,13 +13,21 @@ import Footer from './components/Footer/Footer';
 function App() {
   return (
     <div className="wrapper">
+      {/* Redux Provider for store */}
       <Provider store={store}>
+        {/* Display header section */}
         <Header />
+        {/* Display hero section */}
         <Hero />
+        {/* Display contact form */}
         <ContactForm />
+        {/* Display services and fees */}
         <Services />
+        {/* Display FAQ section */}
         <AccordionQuestions />
+        {/* Display about section */}
         <About />
+        {/* Display footer section */}
         <Footer />
       </Provider>
     </div>

@@ -4,10 +4,12 @@ import PropTypes from 'prop-types';
 import './NavMenu.css';
 
 const NavMenu = ({ isScrolled }) => {
+  // Extract navigation labels from Redux store
   const { top, requestQuote, serviceFees, faq } = useSelector(
     state => state.about.navigation,
   );
 
+  // Scroll to the specified section with optional offset
   const scrollToSection = (event, targetId) => {
     event.preventDefault();
 
@@ -49,11 +51,13 @@ const NavMenu = ({ isScrolled }) => {
   return (
     <nav className={`nav-menu ${isScrolled ? 'nav-menu-bar' : ''}`}>
       <ul>
+        {/* Scroll to top */}
         <li>
           <a href="#" onClick={event => scrollToSection(event, '')}>
             {top}
           </a>
         </li>
+        {/* Scroll to request quote section */}
         <li>
           <a
             href="#form-container"
@@ -62,6 +66,7 @@ const NavMenu = ({ isScrolled }) => {
             {requestQuote}
           </a>
         </li>
+        {/* Scroll to service fees section */}
         <li>
           <a
             href="#services-fees"
@@ -70,6 +75,7 @@ const NavMenu = ({ isScrolled }) => {
             {serviceFees}
           </a>
         </li>
+        {/* Scroll to FAQ section */}
         <li>
           <a href="#faq" onClick={event => scrollToSection(event, '#faq')}>
             {faq}
@@ -80,6 +86,7 @@ const NavMenu = ({ isScrolled }) => {
   );
 };
 
+// Prop validation for isScrolled
 NavMenu.propTypes = {
   isScrolled: PropTypes.bool.isRequired,
 };

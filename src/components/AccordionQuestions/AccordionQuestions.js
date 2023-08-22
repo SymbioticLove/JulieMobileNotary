@@ -5,6 +5,7 @@ import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import './AccordionQuestions.css';
 
 const AccordionQuestions = () => {
+  // Extract FAQ data from Redux store
   const {
     title,
     what,
@@ -19,8 +20,10 @@ const AccordionQuestions = () => {
     reAnswer,
   } = useSelector(state => state.about.faq);
 
+  // Extract disclaimer text from Redux store
   const { disclaimer } = useSelector(state => state.about.disclaimer);
 
+  // Define FAQ entries with questions and answers
   const faqEntries = [
     { question: what, answer: whatAnswer },
     { question: noid, answer: noidAnswer },
@@ -29,10 +32,12 @@ const AccordionQuestions = () => {
     { question: re, answer: reAnswer },
   ];
 
+  // State for managing active accordion index and max height
   const [activeIndex, setActiveIndex] = useState(null);
   const [maxHeight, setMaxHeight] = useState('225px'); // Default height
   const accordionRef = useRef(null);
 
+  // Update max height on window resize
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
@@ -52,15 +57,18 @@ const AccordionQuestions = () => {
     };
   }, []);
 
+  // Handle click on accordion items
   const handleAccordionClick = index => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
   return (
     <div className="faq-background">
+      {/* Display FAQ title */}
       <h1>{title}</h1>
       <div className="faq-outer-container" id="faq">
         <div className="faq-container">
+          {/* Map and display FAQ entries */}
           {faqEntries.map((entry, index) => (
             <div
               key={entry.question}
@@ -70,6 +78,7 @@ const AccordionQuestions = () => {
                 className="faq-question"
                 onClick={() => handleAccordionClick(index)}
               >
+                {/* Display question and caret icon */}
                 {entry.question}
                 <span
                   className="caret-icon"
@@ -89,17 +98,20 @@ const AccordionQuestions = () => {
                 className="faq-answer"
                 ref={accordionRef}
                 style={{
+                  // Set max height and overflow for answer visibility
                   maxHeight: activeIndex === index ? maxHeight : '0',
                   overflow: 'hidden',
                   transition: 'max-height 0.6s ease-in-out',
                 }}
               >
+                {/* Display answer */}
                 <p>{entry.answer}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
+      {/* Display disclaimer */}
       <p className="disclaimer">{disclaimer}</p>
     </div>
   );

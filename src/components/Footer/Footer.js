@@ -3,11 +3,13 @@ import { useSelector } from 'react-redux';
 import './Footer.css';
 
 const Footer = () => {
+  // Extract copyright text from Redux store
   const { copyright } = useSelector(state => state.about.footer);
 
+  // Portfolio link
   const portfolioLink = `https://symbioticlove.github.io/Portfolio/`;
 
-  // Replace the first line with the modified link
+  // Modify the first line of copyright text
   const modifiedCopyright = [...copyright]; // Create a copy of the array
   if (modifiedCopyright.length > 0) {
     modifiedCopyright[0] = modifiedCopyright[0].replace(
@@ -16,16 +18,17 @@ const Footer = () => {
     );
   }
 
-  // Replace payment service names with links in line 4
-  if (modifiedCopyright.length > 2) {
-    const paymentServiceNames = ['PayPal', 'Cash App', 'Venmo', 'Zelle'];
-    const paymentServiceLinks = [
-      'https://www.paypal.com',
-      'https://cash.app',
-      'https://venmo.com',
-      'https://www.zellepay.com',
-    ];
+  // Payment service names and links
+  const paymentServiceNames = ['PayPal', 'Cash App', 'Venmo', 'Zelle'];
+  const paymentServiceLinks = [
+    'https://www.paypal.com',
+    'https://cash.app',
+    'https://venmo.com',
+    'https://www.zellepay.com',
+  ];
 
+  // Replace payment service names with links
+  if (modifiedCopyright.length > 2) {
     paymentServiceNames.forEach((serviceName, index) => {
       modifiedCopyright[3] = modifiedCopyright[3].replace(
         new RegExp(serviceName, 'g'),
@@ -36,6 +39,7 @@ const Footer = () => {
 
   return (
     <div className="footer">
+      {/* Display modified copyright text */}
       <div className="copyright">
         {modifiedCopyright.map((line, index) => (
           <p key={index} dangerouslySetInnerHTML={{ __html: line }} />
@@ -43,6 +47,7 @@ const Footer = () => {
       </div>
       <div className="payment-images">
         <h4>Payments accepted through...</h4>
+        {/* Display payment service logos */}
         <img
           src={process.env.PUBLIC_URL + '/ca_logo.svg'}
           alt="Cash App logo"

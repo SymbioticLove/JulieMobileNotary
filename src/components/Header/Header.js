@@ -4,14 +4,17 @@ import './Header.css';
 import NavMenu from '../NavMenu/NavMenu';
 
 const Header = () => {
+  // Extract header title and subtitle from Redux store
   const { headerTitle, headerSubtitle } = useSelector(
     state => state.about.header,
   );
 
+  // State for scroll and typed subtitle
   const [isScrolled, setIsScrolled] = useState(false);
   const [typedSubtitle, setTypedSubtitle] = useState('');
   const [currentLetterIndex, setCurrentLetterIndex] = useState(0);
 
+  // Handle scroll event
   const handleScroll = () => {
     if (window.innerWidth >= 1068) {
       if (window.scrollY > 50) {
@@ -22,6 +25,7 @@ const Header = () => {
     }
   };
 
+  // Add and remove scroll event listener
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
@@ -30,6 +34,7 @@ const Header = () => {
     };
   }, []);
 
+  // Typing effect for header subtitle
   useEffect(() => {
     if (currentLetterIndex < headerSubtitle.length + 1) {
       let typingTimer;
@@ -52,14 +57,17 @@ const Header = () => {
   return (
     <div className={`header-container ${isScrolled ? 'shadow' : ''}`}>
       <div className={`title ${isScrolled ? 'bar-title' : ''}`}>
+        {/* Display logo */}
         <div className={`logo ${isScrolled ? 'bar-logo' : ''}`}>
           <img src="https://placehold.co/200" alt="RSS Logo" />
         </div>
+        {/* Display header title and typed subtitle */}
         <div>
           <h1>{headerTitle}</h1>
           <p>{typedSubtitle}</p>
         </div>
       </div>
+      {/* Display navigation menu */}
       <div className="nav-menu-container">
         <NavMenu isScrolled={isScrolled} />
       </div>

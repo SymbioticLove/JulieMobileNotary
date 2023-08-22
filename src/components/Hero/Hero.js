@@ -3,8 +3,10 @@ import { useSelector } from 'react-redux';
 import './Hero.css';
 
 const Hero = () => {
+  // Extract counties and hero text from Redux store
   const { counties, heroText } = useSelector(state => state.about.hero);
 
+  // Email and phone links
   const emailLink = `mailto:remotesigningservices@gmail.com?subject=Mobile%20Notary%20Inquiry`;
   const phoneLink = `tel:214-616-4549`;
 
@@ -21,11 +23,14 @@ const Hero = () => {
 
   return (
     <div className="hero-container">
+      {/* Display counties */}
       <div className="title-container">
         <h3>{counties}</h3>
       </div>
+      {/* Display hero text */}
       <div className="text-container">
         <p dangerouslySetInnerHTML={{ __html: formattedHeroText }} />
+        {/* Display email and phone buttons */}
         <div className="phone">
           <a href={emailLink} alt="Email Me">
             <button>Email Me</button>
