@@ -76,7 +76,9 @@
 @media only screen and (max-width: 768px) {
   .faq-container {
     max-width: 90%;
+    padding: 1rem;
   }
+
   .faq-question {
     font-size: 1.25rem;
   }

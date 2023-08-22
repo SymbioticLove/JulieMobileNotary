@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
@@ -30,7 +30,27 @@ const AccordionQuestions = () => {
   ];
 
   const [activeIndex, setActiveIndex] = useState(null);
+  const [maxHeight, setMaxHeight] = useState('225px'); // Default height
   const accordionRef = useRef(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setMaxHeight('400px');
+      } else {
+        setMaxHeight('225px');
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Call handleResize once on component mount to set initial maxHeight
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const handleAccordionClick = index => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -69,7 +89,7 @@ const AccordionQuestions = () => {
                 className="faq-answer"
                 ref={accordionRef}
                 style={{
-                  maxHeight: activeIndex === index ? '225px' : '0',
+                  maxHeight: activeIndex === index ? maxHeight : '0',
                   overflow: 'hidden',
                   transition: 'max-height 0.6s ease-in-out',
                 }}
