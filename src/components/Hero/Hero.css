@@ -5,8 +5,10 @@
   background-image: url(../../../public/business.jpg);
   background-size: cover;
   background-blend-mode: screen;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  max-height: 1080px;
 }
 
 .hero-container h3 {
@@ -55,6 +57,7 @@
   text-decoration: none;
   color: var(--blue);
   transition: all ease 0.3s;
+  white-space: nowrap;
 }
 
 .contact:hover {

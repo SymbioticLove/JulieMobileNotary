@@ -21,7 +21,6 @@
 .faq-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   text-align: center;
   border: 2px solid var(--blue);
@@ -30,8 +29,8 @@
   background: url(../../../public/signature-contract.jpg);
   background-color: var(--lgrey);
   background-blend-mode: overlay;
+  background-repeat: no-repeat;
   background-size: cover;
-  min-height: 763px;
   box-shadow: 0 0 10px #000;
   padding: 2rem;
   margin: 0.5rem;
