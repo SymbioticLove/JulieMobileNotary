@@ -4,7 +4,8 @@ The Components directory contains various components that make up the different 
 
 ## Components
 
-- `Header`: Displays the navigation menu and adjusts its appearance when the user scrolls down the page.
+- `Header`: Displays the `NavMenu` component and adjusts its appearance when the user scrolls down the page.
+- `NavMenu`: Displays the navigation links for the page and handles scrolling behavior.
 - `Hero`: Showcases a hero section with information about services, counties served, and contact options.
 - `ContactForm`: Provides a form for users to request a quote and schedule an appointment. Sends an email using the EmailJS service upon submission.
 - `Services`: Presents information about meeting locations, services provided, and associated fees.
