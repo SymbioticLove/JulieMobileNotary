@@ -1,6 +1,6 @@
 # About Section Component
 
-The About Section Components directory contains components related to showcasing information about the mobile notary professional and the business. These components contribute to providing a detailed introduction and background for your users.
+The About Section Components directory contains components related to showcasing information about the yourself and the business. This component contributes to providing a detailed introduction and background for your users.
 
 ## Usage
 
