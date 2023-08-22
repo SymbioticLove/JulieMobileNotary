@@ -16,7 +16,7 @@ const Footer = () => {
     );
   }
 
-  // Replace payment service names with links in line 3
+  // Replace payment service names with links in line 4
   if (modifiedCopyright.length > 2) {
     const paymentServiceNames = ['PayPal', 'Cash App', 'Venmo', 'Zelle'];
     const paymentServiceLinks = [
@@ -27,7 +27,7 @@ const Footer = () => {
     ];
 
     paymentServiceNames.forEach((serviceName, index) => {
-      modifiedCopyright[2] = modifiedCopyright[2].replace(
+      modifiedCopyright[3] = modifiedCopyright[3].replace(
         new RegExp(serviceName, 'g'),
         `<a href="${paymentServiceLinks[index]}" alt="${serviceName}" target="_blank" rel="noopener noreferrer" class="footer-link">${serviceName}</a>`,
       );

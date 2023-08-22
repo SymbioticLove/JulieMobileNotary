@@ -24,12 +24,24 @@ const NavMenu = ({ isScrolled }) => {
         const offsetInVh = -15; // Adjust this value as needed
         const viewportHeight = window.innerHeight;
         const offsetInPixels = (viewportHeight * offsetInVh) / 100; // Convert vh to pixels
-        const targetOffsetTop =
-          targetElement.getBoundingClientRect().top + window.scrollY;
-        window.scrollTo({
-          top: targetOffsetTop + offsetInPixels,
-          behavior: 'smooth',
-        });
+
+        // Check screen width before applying the offset
+        if (window.innerWidth >= 1068) {
+          const targetOffsetTop =
+            targetElement.getBoundingClientRect().top + window.scrollY;
+          window.scrollTo({
+            top: targetOffsetTop + offsetInPixels,
+            behavior: 'smooth',
+          });
+        } else {
+          // Scroll to the target without offset
+          const targetOffsetTop =
+            targetElement.getBoundingClientRect().top + window.scrollY;
+          window.scrollTo({
+            top: targetOffsetTop,
+            behavior: 'smooth',
+          });
+        }
       }
     }
   };
