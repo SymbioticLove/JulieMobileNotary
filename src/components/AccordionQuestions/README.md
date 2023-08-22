@@ -1,6 +1,6 @@
 # Accordion Questions Component
 
-The Accordion Questions Components directory contains components related to displaying frequently asked questions (FAQs) in an accordion format. These components contribute to providing users with quick access to answers for common queries.
+The Accordion Questions Components directory contains the component responsible for displaying frequently asked questions (FAQs) in an accordion format. These components contribute to providing users with quick access to answers for common queries.
 
 ## Usage
 
