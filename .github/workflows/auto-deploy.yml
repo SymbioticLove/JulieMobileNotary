@@ -16,10 +16,11 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Install Dependencies
         run: npm install
 
-      - name: Watch for Changes
-        run: npm run watch-data
+      - name: Execute Changes
+        run: npm run handle-data-change
+

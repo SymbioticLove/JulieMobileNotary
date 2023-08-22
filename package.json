@@ -37,7 +37,7 @@
     "lint:fix": "eslint src --fix",
     "format": "npx prettier --write \"src/**/*.{js,css}\"",
     "lint-and-format": "npm run format && npm run lint:fix",
-    "watch-data": "chokidar './src/data/data.json' -c 'npm run handle-data-change'",
+    "watch-data": "npm run handle-data-change",
     "handle-data-change": "npm run build && rm -rf './src/static/' && mv './src/build/*' './src/'"
   },  
   "eslintConfig": {
