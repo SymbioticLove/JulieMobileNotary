@@ -5,7 +5,6 @@ import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import './AccordionQuestions.css';
 
 const AccordionQuestions = () => {
-  // Extract FAQ data from Redux store
   const {
     title,
     what,
@@ -20,10 +19,8 @@ const AccordionQuestions = () => {
     reAnswer,
   } = useSelector(state => state.about.faq);
 
-  // Extract disclaimer text from Redux store
   const { disclaimer } = useSelector(state => state.about.disclaimer);
 
-  // Define FAQ entries with questions and answers
   const faqEntries = [
     { question: what, answer: whatAnswer },
     { question: noid, answer: noidAnswer },
@@ -32,12 +29,10 @@ const AccordionQuestions = () => {
     { question: re, answer: reAnswer },
   ];
 
-  // State for managing active accordion index and max height
   const [activeIndex, setActiveIndex] = useState(null);
   const [maxHeight, setMaxHeight] = useState('225px'); // Default height
   const accordionRef = useRef(null);
 
-  // Update max height on window resize
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
@@ -57,7 +52,6 @@ const AccordionQuestions = () => {
     };
   }, []);
 
-  // Handle click on accordion items
   const handleAccordionClick = index => {
     setActiveIndex(activeIndex === index ? null : index);
   };
@@ -73,12 +67,14 @@ const AccordionQuestions = () => {
             <div
               key={entry.question}
               className={`faq-item ${index === activeIndex ? 'active' : ''}`}
+              role="region" // Define the region role for each accordion item
+              aria-expanded={index === activeIndex} // Indicate the expanded state
             >
-              <div
+              <button // Use a button for each accordion item for better accessibility
                 className="faq-question"
                 onClick={() => handleAccordionClick(index)}
+                aria-controls={`answer-${index}`} // Connect button to the answer
               >
-                {/* Display question and caret icon */}
                 {entry.question}
                 <span
                   className="caret-icon"
@@ -93,25 +89,24 @@ const AccordionQuestions = () => {
                 >
                   <FontAwesomeIcon icon={faCaretDown} />
                 </span>
-              </div>
+              </button>
               <div
+                id={`answer-${index}`} // Unique ID for each answer for accessibility
                 className="faq-answer"
                 ref={accordionRef}
                 style={{
-                  // Set max height and overflow for answer visibility
                   maxHeight: activeIndex === index ? maxHeight : '0',
                   overflow: 'hidden',
                   transition: 'max-height 0.6s ease-in-out',
                 }}
+                aria-hidden={activeIndex !== index} // Hide non-active answers from screen readers
               >
-                {/* Display answer */}
                 <p>{entry.answer}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
-      {/* Display disclaimer */}
       <p className="disclaimer">{disclaimer}</p>
     </div>
   );

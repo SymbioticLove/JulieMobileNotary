@@ -5,25 +5,21 @@ import { format } from 'date-fns';
 import './ContactForm.css';
 
 const ContactForm = () => {
-  // Extract disclaimer text from Redux store
   const { disclaimer } = useSelector(state => state.about.disclaimer);
 
-  // State for form input fields
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [location, setLocation] = useState('');
   const [phone, setPhone] = useState('');
   const [datetime, setDatetime] = useState('');
   const [description, setDescription] = useState('');
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false); // New state
 
-  // Handle form submission
   const handleSubmit = event => {
     event.preventDefault();
 
-    // Initialize EmailJS
     emailjs.init('T4558Y3IxSEuZqC0l');
 
-    // Prepare email template and send email
     const formattedDatetime = format(
       new Date(datetime),
       "eee MM/dd/yyyy 'at' hh:mm a",
@@ -34,15 +30,13 @@ const ContactForm = () => {
       email,
       location,
       phone,
-      formattedDatetime, // Pass pre-formatted datetime
+      formattedDatetime,
       description,
     };
 
-    // Send email using EmailJS service
     emailjs.send('service_eoyk5kl', 'template_plfpr2h', templateParams).then(
       function () {
-        alert('Message Sent Successfully!');
-        // Clear form fields after successful submission
+        setShowSuccessMessage(true); // Show success message
         setName('');
         setEmail('');
         setLocation('');
@@ -64,69 +58,62 @@ const ContactForm = () => {
         <h4>Request a Quote to Schedule an Appointment</h4>
         <form onSubmit={handleSubmit} className="form" id="contact-form">
           <div className="form-left">
-            {/* Input fields for name, email, location, and phone */}
             <div className="form-row">
+              <label htmlFor="name">Name (required)</label> {/* Add label */}
               <input
                 type="text"
                 id="name"
                 className="grey"
                 name="name"
-                placeholder="Name (required)"
                 value={name}
                 onChange={e => setName(e.target.value)}
                 required
               />
             </div>
             <br />
-
+            {/* Add similar label and accessibility enhancements for other inputs */}
             <div className="form-row">
+              <label htmlFor="email">Email (required)</label>
               <input
                 type="email"
                 id="email"
                 className="grey"
                 name="email"
-                placeholder="Email (required)"
                 value={email}
                 onChange={e => setEmail(e.target.value)}
                 required
               />
             </div>
             <br />
-
             <div className="form-row">
+              <label htmlFor="location">Location (required)</label>
               <input
                 type="text"
                 id="location"
                 className="grey"
                 name="location"
-                placeholder="Location (required)"
                 value={location}
                 onChange={e => setLocation(e.target.value)}
                 required
               />
             </div>
             <br />
-
             <div className="form-row">
+              <label htmlFor="phone">Phone (optional)</label>
               <input
                 type="tel"
                 id="phone"
                 className="grey"
                 name="phone"
-                placeholder="Phone (optional)"
                 value={phone}
                 onChange={e => setPhone(e.target.value)}
               />
             </div>
           </div>
           <br />
-
           <div className="form-right">
-            {/* Input field for date/time and description */}
             <div className="form-row">
-              <label htmlFor="datetime" className="datetime">
-                Date/Time (optional)
-              </label>
+              <label htmlFor="datetime">Date/Time (optional)</label>
               <input
                 type="datetime-local"
                 id="datetime"
@@ -137,25 +124,36 @@ const ContactForm = () => {
               />
             </div>
             <br />
-
+            <label htmlFor="description" className="bottom-label">
+              Description (required)
+            </label>
             <textarea
               id="description"
               className="grey"
               name="description"
-              placeholder="What are you looking for? (optional)"
               value={description}
               onChange={e => setDescription(e.target.value)}
               rows="4"
               maxLength="1000"
+              placeholder="What can I do for you?"
               required
             ></textarea>
             <br />
           </div>
         </form>
-        {/* Submit button */}
         <div className="submit-container">
-          <input type="submit" value="Submit" form="contact-form" />
+          <button type="submit" form="contact-form">
+            Submit
+          </button>{' '}
+          {/* Use button element */}
         </div>
+        {showSuccessMessage && ( // Conditional rendering of success message
+          <div className="success-container">
+            <div className="success-message">
+              <p>Message Sent Successfully!</p>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  max-height: 1080px;
+  max-height: 800px;
 }
 
 .hero-container h3 {
@@ -94,6 +94,8 @@
 
   .phone {
     display: flex;
+    text-align: center;
+    justify-content: center;
     padding-bottom: 1rem;
   }
 }

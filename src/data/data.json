@@ -11,7 +11,7 @@
    },
    "hero": {
       "counties": "Serving the Counties of Collin, Denton, Dallas, Hunt, and Grayson",
-      "heroText": "Experience the utmost convenience with Remote Signing Services. Whether you're at home, in your office, or having a cup of coffee, my mobile notary services are designed to cater to your needs. From real estate documents to notarization, I provide seamless and efficient service. To request a quote, fill out the form below! Contact me at remotesigningservices@gmail.com or give me a call at (214)616-4549 with any questions or concerns."
+      "heroText": "Experience the utmost convenience with Remote Signing Services. Whether you're at home, in your office, or at a local coffee shop, my mobile notary services are designed to cater to your needs. To request a quote, fill out the form below. Contact me at remotesigningservices@gmail.com or give me a call at (214)616-4549 with any questions or concerns."
    },
    "services": {
       "meetTitle": "Meeting Locations",
@@ -35,7 +35,7 @@
          "$40 - Base Travel Fee Within 15 Miles of 75071",
          "+$1 - Each Additional Mile > 15 Miles",
          "$25 - After Hours Surcharge (after 6pm)",
-         "$50 - Immediate Service"
+         "$50 - Immediate Service (can't wait until tomorrow)"
       ]
    },
    "faq": {
@@ -43,7 +43,7 @@
       "what": "What does a Notary do?",
       "whatAnswer": "The responsibility of a notary in Texas extends to verifying the identity of signers for significant documents, ensuring their voluntary agreement without any undue pressure, and confirming their understanding of the document's purpose. In specific instances, notaries are also required to administer an oath, compelling signers to attest, under threat of legal consequences, to the accuracy and authenticity of the document's contents.",
       "noid": "What if I don't have a valid ID?",
-      "noidAnswer": "In cases where a government-issued photo ID is unavailable, the requirement entails presenting TWO reliable witnesses possessing valid IDs. These witnesses must affirm their personal familiarity with you and validate your identity as the individual named in the document.",
+      "noidAnswer": "In cases where a government-issued photo ID is unavailable, the requirement entails presenting TWO credible witnesses possessing valid IDs. These witnesses must affirm their personal familiarity with you and validate your identity as the individual named in the document.",
       "length": "How long does an appointment take?",
       "lengthAnswer": "The duration is contingent upon the quantity of documents and signatures necessitating notarization. Generally, the majority of notarizations conclude within 30 minutes, while real estate signings may span around an hour. Upon scheduling your appointment, I can furnish you with an approximate timeframe.",
       "late": "Can I make an appointment on weekends or after hours?",
@@ -54,7 +54,7 @@
    "about": {
       "aboutTitle": "Meet Julie Nichols, a Mobile Notary Professional",
       "aboutText": [
-         "Beyond her extensive expertise, Julie's life is colored by her roles as a grandma, a Harley aficionado, and a devoted dog lover. With two decades of experience in Mortgage Loans, Julie approaches every task with a keen eye for detail and a deep understanding of the industry's intricacies. Off the clock, you'll find Julie embracing her inner adventurer as she hits the open road on her Harley Softail or enjoying a relaxying sunset on the beach. The wind in her hair and the rumble of the engine serve as a testament to her free spirit and zest for life. Julie's passion for her work is matched only by her affection for her furry companion. Her dog, Bailey, is a constant reminder of the importance of loyalty and companionship, values that she brings into every client interaction.",
+         "Beyond her extensive expertise, Julie's life is colored by her roles as a grandma, a Harley aficionado, and a devoted dog lover. With two decades of experience in Mortgage Loans, Julie approaches every task with a keen eye for detail and a deep understanding of the industry's intricacies. Off the clock, you'll find Julie embracing her inner adventurer as she hits the open road on her Harley Softail or enjoying a relaxing sunset on the beach. The wind in her hair and the rumble of the engine serve as a testament to her free spirit and zest for life. Julie's passion for her work is matched only by her affection for her furry companion. Her dog, Bailey, is a constant reminder of the importance of loyalty and companionship, values that she brings into every client interaction.",
          "In choosing Julie Nichols for your mobile notary needs, you're not only opting for a seasoned professional but also inviting the warmth of a grandma, the thrill of a Harley rider, and the sincerity of a devoted dog lover into your experience. "
       ]
    },
@@ -63,7 +63,7 @@
          "Website design and code © Matthew Ford 2023",
          "Logo design © Jessela Sproat 2023",
          "Remote Signing Services and all related logos, colors, etc. © Julia Nichols 2023",
-         "All symbols, including but not limited to those of Cash App, Zelle, PayPal, and Venmo, are property of their respective owners and are used with permission",
+         "All symbols, including but not limited to those of Cash App, Zelle, and Venmo, are property of their respective owners and are used with permission",
          "The photos on this site are either wholly owned or are used with permission and do not require individual attribution",
          "Julie C. Nichols, Certified Notary Public, TX Notary ID #13443153-2"
       ]

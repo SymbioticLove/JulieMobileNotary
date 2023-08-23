@@ -47,6 +47,8 @@
   color: var(--blue);
   font-weight: bold;
   transition: all ease 0.3s;
+  border: none;
+  background: inherit;
 }
 
 .faq-question:hover {
@@ -78,6 +80,10 @@
     max-width: 90%;
     padding: 1rem;
     background-position: center;
+  }
+
+  .faq-background h1 {
+    font-size: 2rem;
   }
 
   .faq-question {

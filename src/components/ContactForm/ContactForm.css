@@ -64,11 +64,17 @@
   font-weight: normal;
 }
 
+.bottom-label,
 .form-row label {
   font-family: var(--body2);
   color: var(--lgrey);
   letter-spacing: 0.1rem;
   margin-bottom: 0.25rem;
+}
+
+.bottom-label {
+  display: flex;
+  justify-content: center;
 }
 
 .disclaim {
@@ -116,7 +122,7 @@ input[type='datetime-local']::-webkit-calendar-picker-indicator:hover {
   padding-bottom: 2rem;
 }
 
-.submit-container input {
+.submit-container button {
   padding: 0.5rem;
   background: var(--lgrey);
   font-family: var(--body1);
@@ -127,12 +133,36 @@ input[type='datetime-local']::-webkit-calendar-picker-indicator:hover {
   border-radius: 5px;
   letter-spacing: 0.075rem;
   transition: ease all 0.3s;
+  box-sizing: border-box;
 }
 
-.submit-container input:hover {
+.submit-container button:hover {
   background: var(--blue);
   color: var(--lgrey);
   cursor: pointer;
+}
+
+.success-container {
+  display: flex;
+  justify-content: center;
+}
+
+.success-message {
+  height: 50px;
+  width: 400px;
+  background: var(--blue);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.success-message p {
+  font-family: var(--body1);
+  color: var(--lgrey);
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1068px) {

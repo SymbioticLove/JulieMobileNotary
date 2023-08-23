@@ -120,5 +120,6 @@
 
   .logo {
     margin-right: 0;
+    justify-content: flex-start;
   }
 }

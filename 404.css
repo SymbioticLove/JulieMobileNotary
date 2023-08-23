@@ -1,0 +1,55 @@
+.html,
+.body {
+    margin: 0;
+    background: #0F4075;
+}
+
+.redirect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0F4057;
+}
+
+.redirect h1 {
+    font-family: 'Bad Script', cursive;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: #D4D2D5;
+    margin: 0;
+    padding: 0;
+}
+
+.redirect p {
+    color: #D4D2D5;
+    font-size: 1.5rem;
+}
+
+.redirect a {
+    color: #bd6fdb;
+    text-decoration: none;
+}
+
+.redirect a:hover {
+    text-decoration: underline;
+}
+
+.loading-animation {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #bd6fdb;
+    border-top: 4px solid transparent;
+    border-radius: 50%;
+    animation: spin 2s linear infinite; /* Apply the spin animation */
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}

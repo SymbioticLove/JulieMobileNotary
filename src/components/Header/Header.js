@@ -55,10 +55,22 @@ const Header = () => {
   }, [currentLetterIndex, headerSubtitle]);
 
   return (
-    <div className={`header-container ${isScrolled ? 'shadow' : ''}`}>
-      <div className={`title ${isScrolled ? 'bar-title' : ''}`}>
+    <div
+      className={`header-container ${
+        isScrolled && window.innerWidth >= 1068 ? 'shadow' : ''
+      }`}
+    >
+      <div
+        className={`title ${
+          isScrolled && window.innerWidth >= 1068 ? 'bar-title' : ''
+        }`}
+      >
         {/* Display logo */}
-        <div className={`logo ${isScrolled ? 'bar-logo' : ''}`}>
+        <div
+          className={`logo ${
+            isScrolled && window.innerWidth >= 1068 ? 'bar-logo' : ''
+          }`}
+        >
           <img src="https://placehold.co/200" alt="RSS Logo" />
         </div>
         {/* Display header title and typed subtitle */}

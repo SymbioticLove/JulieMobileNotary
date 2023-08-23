@@ -48,6 +48,7 @@
   letter-spacing: 0.1rem;
   text-align: center;
   margin: 3rem 0 1rem;
+  padding: 0 0.5rem;
 }
 
 .about-container p {
@@ -85,7 +86,7 @@
 
 @media only screen and (max-width: 768px) {
   .about-container h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .about-container p {

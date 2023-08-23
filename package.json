@@ -13,6 +13,7 @@
     "date-fns": "^2.30.0",
     "emailjs-com": "^3.2.0",
     "eslint": "^8.47.0",
+    "gsap": "^3.12.2",
     "prettier": "^3.0.2",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -39,7 +40,7 @@
     "lint-and-format": "npm run format && npm run lint:fix",
     "watch-data": "npm run handle-data-change",
     "handle-data-change": "npm run build && rm -rf './src/static/' && mv './src/build/*' './src/'"
-  },  
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
