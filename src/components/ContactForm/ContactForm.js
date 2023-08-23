@@ -13,7 +13,7 @@ const ContactForm = () => {
   const [phone, setPhone] = useState('');
   const [datetime, setDatetime] = useState('');
   const [description, setDescription] = useState('');
-  const [showSuccessMessage, setShowSuccessMessage] = useState(false); // New state
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
   const handleSubmit = event => {
     event.preventDefault();
@@ -25,11 +25,18 @@ const ContactForm = () => {
       "eee MM/dd/yyyy 'at' hh:mm a",
     );
 
+    // Format the phone number before sending
+    const cleanedPhone = phone.replace(/\D/g, ''); // Remove non-digit characters
+    const formattedPhone = cleanedPhone.replace(
+      /(\d{3})(\d{3})(\d{4})/,
+      '($1)$2-$3',
+    );
+
     const templateParams = {
       name,
       email,
       location,
-      phone,
+      phone: formattedPhone,
       formattedDatetime,
       description,
     };
@@ -145,7 +152,6 @@ const ContactForm = () => {
           <button type="submit" form="contact-form">
             Submit
           </button>{' '}
-          {/* Use button element */}
         </div>
         {showSuccessMessage && ( // Conditional rendering of success message
           <div className="success-container">

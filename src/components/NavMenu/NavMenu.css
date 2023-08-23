@@ -47,4 +47,8 @@
   .nav-menu ul li {
     font-size: 1.1rem;
   }
+
+  .nav-menu ul li a:hover {
+    margin-right: 0;
+  }
 }
