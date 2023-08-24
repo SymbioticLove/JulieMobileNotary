@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/JulieMobileNotary/static/css/main.cdb4cfec.css",
-    "main.js": "/JulieMobileNotary/static/js/main.364c2106.js",
+    "main.css": "/JulieMobileNotary/static/css/main.130445db.css",
+    "main.js": "/JulieMobileNotary/static/js/main.e83d4d3b.js",
     "static/js/787.ce35c262.chunk.js": "/JulieMobileNotary/static/js/787.ce35c262.chunk.js",
     "static/media/signature-contract.jpg": "/JulieMobileNotary/static/media/signature-contract.21ec46cb695d0794664f.jpg",
     "static/media/business.jpg": "/JulieMobileNotary/static/media/business.3df75faa9dad0b7bbb65.jpg",
     "index.html": "/JulieMobileNotary/index.html",
-    "main.cdb4cfec.css.map": "/JulieMobileNotary/static/css/main.cdb4cfec.css.map",
-    "main.364c2106.js.map": "/JulieMobileNotary/static/js/main.364c2106.js.map",
+    "main.130445db.css.map": "/JulieMobileNotary/static/css/main.130445db.css.map",
+    "main.e83d4d3b.js.map": "/JulieMobileNotary/static/js/main.e83d4d3b.js.map",
     "787.ce35c262.chunk.js.map": "/JulieMobileNotary/static/js/787.ce35c262.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cdb4cfec.css",
-    "static/js/main.364c2106.js"
+    "static/css/main.130445db.css",
+    "static/js/main.e83d4d3b.js"
   ]
 }

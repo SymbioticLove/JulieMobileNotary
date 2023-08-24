@@ -14,6 +14,9 @@ const Header = () => {
   const [typedSubtitle, setTypedSubtitle] = useState('');
   const [currentLetterIndex, setCurrentLetterIndex] = useState(0);
 
+  // State to manage logo image source
+  const [logoImage, setLogoImage] = useState('/RSS_Quill_Light.png');
+
   // Handle scroll event
   const handleScroll = () => {
     if (window.innerWidth >= 1068) {
@@ -72,8 +75,10 @@ const Header = () => {
           }`}
         >
           <img
-            src={process.env.PUBLIC_URL + '/RSS_Quill_Colored.png'}
+            src={process.env.PUBLIC_URL + logoImage}
             alt="RSS Logo"
+            onMouseOver={() => setLogoImage('/RSS_Quill_Colored.png')}
+            onMouseOut={() => setLogoImage('/RSS_Quill_Light.png')}
           />
         </div>
         {/* Display header title and typed subtitle */}

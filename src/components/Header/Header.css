@@ -25,21 +25,13 @@
   margin-right: 1rem;
 }
 
-.logo:hover img {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-
 .logo img {
-  transition: all 0.3s ease;
   height: 200px;
-  width: 200px;
-  margin: 1rem;
+  margin: 1rem 0 0.5rem;
 }
 
 .bar-logo img {
   height: 100px;
-  width: 100px;
 }
 
 .title {
@@ -100,8 +92,8 @@
   }
 
   .logo img {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    margin-bottom: -2.2rem;
   }
 
   .title h1 {
@@ -124,6 +116,6 @@
 
   .logo {
     margin-right: 0;
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
