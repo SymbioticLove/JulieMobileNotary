@@ -18,16 +18,29 @@ const ContactForm = () => {
   const handleSubmit = event => {
     event.preventDefault();
 
-    emailjs.init('T4558Y3IxSEuZqC0l');
+    emailjs.init('7UT1VfD_tYKRR3-pI');
 
     const formattedDatetime = format(
       new Date(datetime),
       "eee MM/dd/yyyy 'at' hh:mm a",
     );
 
-    // Format the phone number before sending
-    const cleanedPhone = phone.replace(/\D/g, ''); // Remove non-digit characters
-    const formattedPhone = cleanedPhone.replace(
+    // Remove non-digit characters from the phone number
+    const cleanedPhone = phone.replace(/\D/g, '');
+
+    // Check if the phone number starts with a country code and remove it
+    const countryCodes = '1';
+    let filteredPhone = cleanedPhone;
+
+    for (const code of countryCodes) {
+      if (filteredPhone.startsWith(code)) {
+        filteredPhone = filteredPhone.slice(code.length);
+        break;
+      }
+    }
+
+    // Format the remaining digits of the phone number
+    const formattedPhone = filteredPhone.replace(
       /(\d{3})(\d{3})(\d{4})/,
       '($1)$2-$3',
     );
@@ -41,7 +54,7 @@ const ContactForm = () => {
       description,
     };
 
-    emailjs.send('service_eoyk5kl', 'template_plfpr2h', templateParams).then(
+    emailjs.send('service_7zdka3b', 'template_tjih0rt', templateParams).then(
       function () {
         setShowSuccessMessage(true); // Show success message
         setName('');
