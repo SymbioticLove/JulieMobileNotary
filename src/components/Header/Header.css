@@ -28,6 +28,7 @@
 .logo img {
   height: 200px;
   margin: 1rem 0 0.5rem;
+  transition: all 0.3s ease;
 }
 
 .bar-logo img {
