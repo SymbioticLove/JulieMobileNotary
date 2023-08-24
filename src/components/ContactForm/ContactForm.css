@@ -156,7 +156,7 @@ input[type='datetime-local']::-webkit-calendar-picker-indicator:hover {
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
-  padding: .25rem;
+  padding: 0.25rem;
 }
 
 .success-message p {

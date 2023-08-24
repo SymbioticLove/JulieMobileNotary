@@ -1,4 +1,4 @@
-# Components
+# Components/
 
 The Components directory contains various components that make up the different sections of your mobile notary application. These components are designed to provide a seamless and interactive user experience.
 

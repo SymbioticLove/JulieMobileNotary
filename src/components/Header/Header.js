@@ -76,7 +76,9 @@ const Header = () => {
         {/* Display header title and typed subtitle */}
         <div>
           <h1>{headerTitle}</h1>
-          <p>{typedSubtitle}</p>
+          <div className="subtitle">
+            <p>{typedSubtitle}</p>
+          </div>
         </div>
       </div>
       {/* Display navigation menu */}
