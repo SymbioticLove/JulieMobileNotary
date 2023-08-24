@@ -27,7 +27,7 @@
 .meeting p {
   color: var(--dgrey);
   font-family: var(--body1);
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   margin-top: 0;
   text-align: center;
   padding: 0 2rem;
@@ -53,6 +53,10 @@
   justify-content: space-around;
 }
 
+.fee-container div {
+  width: 33%;
+}
+
 .surcharges {
   display: flex;
   flex-direction: column;
@@ -70,6 +74,11 @@
   margin-bottom: 1rem;
 }
 
+.fees h2 {
+  border-bottom: 1px dashed var(--blue);
+  margin: 0 1rem;
+}
+
 .fees p {
   font-family: var(--body1);
 }
@@ -84,7 +93,18 @@
     flex-direction: column;
   }
 
+  .fee-container div {
+    width: revert;
+  }
+
   .meeting {
     width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .meeting p,
+  .fees p {
+    font-size: 1.25rem;
   }
 }
