@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/[Favicon Image]" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +35,9 @@
       }
 
       .loading-image {
-        border-radius: 50%;
+        max-height: 400px;
+        max-width: 400px;
+        margin: .5rem;
       }
 
       .loading-animation {
@@ -65,13 +67,13 @@
     <meta name="keywords" content="Remote Signing, Julie Nichols, Loan Signing, Notary Services, Texas, Collin, Denton, Dallas, Hunt, Grayson" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/[Logo Image]" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     
     <!-- Open Graph (OG) Tags -->
     <meta property="og:title" content="Remote Signing Services" />
     <meta property="og:description" content="Texas Mobile loan signing and notary services servicing the counties of Collin, Denton, Dallas, Hunt & Grayson." />
-    <meta property="og:image" content="%PUBLIC_URL%/[OG Image]" />
+    <meta property="og:image" content="%PUBLIC_URL%/RSS_Quill_Colored.png" />
     <meta property="og:url" content="remotesigningservices.com" />
     <meta property="og:type" content="website" />
 
@@ -95,7 +97,7 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div class="loading-screen">
       <img
-        src="https://placehold.co/200"
+        src="%PUBLIC_URL%/RSS_Full_Color.svg"
         alt="Loading Placeholder"
         class="loading-image"
       />

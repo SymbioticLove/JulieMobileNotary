@@ -71,7 +71,10 @@ const Header = () => {
             isScrolled && window.innerWidth >= 1068 ? 'bar-logo' : ''
           }`}
         >
-          <img src="https://placehold.co/200" alt="RSS Logo" />
+          <img
+            src={process.env.PUBLIC_URL + '/RSS_Quill_Colored.png'}
+            alt="RSS Logo"
+          />
         </div>
         {/* Display header title and typed subtitle */}
         <div>

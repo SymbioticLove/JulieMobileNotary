@@ -74,7 +74,6 @@
 
 .bottom-label {
   display: flex;
-  justify-content: center;
 }
 
 .disclaim {
@@ -206,6 +205,10 @@ input[type='datetime-local']::-webkit-calendar-picker-indicator:hover {
 
   #description {
     max-width: 300px;
+  }
+
+  .bottom-label {
+    justify-content: center;
   }
 
   .success-message {
