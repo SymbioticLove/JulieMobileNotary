@@ -1,5 +1,10 @@
 .header-container {
-  background: var(--blue);
+  background: linear-gradient(
+    to right,
+    var(--accent) -15%,
+    var(--blue) 10%,
+    var(--dgrey)
+  );
   position: fixed;
   top: 0;
   left: 0;
