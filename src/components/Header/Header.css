@@ -1,8 +1,8 @@
 .header-container {
   background: linear-gradient(
     to right,
-    var(--accent) -15%,
-    var(--blue) 10%,
+    var(--accent) -60%,
+    var(--blue) 25%,
     var(--dgrey)
   );
   position: fixed;
@@ -99,7 +99,6 @@
 
   .logo img {
     height: 150px;
-    margin-bottom: -2.2rem;
   }
 
   .title h1 {
