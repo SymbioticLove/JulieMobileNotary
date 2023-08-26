@@ -1,13 +1,14 @@
 .hero-container {
-  padding-top: 42vh;
   background: var(--lgrey);
-  background-image: url(../../../public/business.jpg);
-  background-size: cover;
   background-blend-mode: screen;
+  background-image: url(../../../public/business.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   max-height: 1100px;
+  justify-content: center;
+  padding-top: 30vh;
 }
 
 .hero-container h3 {
@@ -96,5 +97,11 @@
     text-align: center;
     justify-content: center;
     padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .hero-container {
+    padding-top: 25vh;
   }
 }
