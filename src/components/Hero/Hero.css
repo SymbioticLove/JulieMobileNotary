@@ -64,7 +64,7 @@
   color: var(--accent);
 }
 
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 1100px) {
   .hero-container {
     padding-top: 2rem;
   }
