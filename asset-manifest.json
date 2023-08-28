@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.bc3a87a9.css",
+    "main.css": "/static/css/main.5d1ed188.css",
     "main.js": "/static/js/main.2ed1db5a.js",
     "static/js/787.ce35c262.chunk.js": "/static/js/787.ce35c262.chunk.js",
     "static/media/signature-contract.jpg": "/static/media/signature-contract.21ec46cb695d0794664f.jpg",
     "static/media/business.jpg": "/static/media/business.3df75faa9dad0b7bbb65.jpg",
     "index.html": "/index.html",
-    "main.bc3a87a9.css.map": "/static/css/main.bc3a87a9.css.map",
+    "main.5d1ed188.css.map": "/static/css/main.5d1ed188.css.map",
     "main.2ed1db5a.js.map": "/static/js/main.2ed1db5a.js.map",
     "787.ce35c262.chunk.js.map": "/static/js/787.ce35c262.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc3a87a9.css",
+    "static/css/main.5d1ed188.css",
     "static/js/main.2ed1db5a.js"
   ]
 }
