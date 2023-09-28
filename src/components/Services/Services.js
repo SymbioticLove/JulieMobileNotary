@@ -48,6 +48,7 @@ const Services = () => {
       {/* Display fees and surcharges */}
       <div className="fees">
         <h2>{feesTitle}</h2>
+        <p className="feeDis">Subject to change without notice</p>
         <div className="fee-container">
           <div>
             <h3>{feesSubtitle1}</h3>

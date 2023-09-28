@@ -83,6 +83,10 @@
   font-family: var(--body1);
 }
 
+.feeDis {
+  font-size: 1.25rem !important;
+}
+
 @media only screen and (max-width: 1068px) {
   .fees-wrapper {
     flex-direction: column;

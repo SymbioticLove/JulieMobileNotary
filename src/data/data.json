@@ -10,7 +10,7 @@
       "faq": "FAQs"
    },
    "hero": {
-      "counties": "Serving the Counties of Collin, Denton, Dallas, Hunt, and Grayson",
+      "counties": "Serving the Counties of Collin, Denton, Dallas, Hunt, Rockwall and Grayson",
       "heroText": "Experience the utmost convenience with Remote Signing Services. Whether you're at home, in your office, or at a local coffee shop, my mobile notary services are designed to cater to your needs. To request a quote, fill out the form below. Contact me at remotesigningservices@gmail.com or give me a call at (214)616-4549 with any questions or concerns."
    },
    "services": {
@@ -21,20 +21,23 @@
       "feesTitle": "Service Fees",
       "feesSubtitle1": "Notary Services",
       "notaryFees": [
-         "$6 - First Signature",
+         "$10 - First Signature",
          "+$1 - Each Additional Signature",
-         "$6 - Administering an Oath/Affirmation"
+         "$10 - Administering an Oath/Affirmation",
+         "$25 - Electronic I-9"
       ],
       "feesSubtitle2": "Real Estate Signing",
       "estateFees": [
-         "$125 - Purchase (Buyer or Seller)",
-         "$150 - Refinances & Reverse Mortgages"
+         "$100 - Seller Package",
+         "$125 - Buyer Package",
+         "$150 - Refinances & Reverse Mortgages",
+         "Other - Contact me!"
       ],
       "feesSubtitle3": "Additional Surcharges",
       "surcharges": [
          "$40 - Base Travel Fee Within 15 Miles of 75071",
-         "+$1 - Each Additional Mile > 15 Miles",
-         "$25 - After Hours Surcharge (after 6pm)",
+         "+$1 - Each Additional Mile > 15 Miles (one-way)",
+         "$25 - After Hours Surcharge (before 9am & after 6pm)",
          "$50 - Immediate Service (can't wait until tomorrow)"
       ]
    },
@@ -47,7 +50,7 @@
       "length": "How long does an appointment take?",
       "lengthAnswer": "The duration is contingent upon the quantity of documents and signatures necessitating notarization. Generally, the majority of notarizations conclude within 30 minutes, while real estate signings may span around an hour. Upon scheduling your appointment, I can furnish you with an approximate timeframe.",
       "late": "Can I make an appointment on weekends or after hours?",
-      "lateAnswer": "Certainly, I am available for notarizations every day of the week. My standard hours are from 8am to 6pm, Monday through Friday, and from 9am to 6pm on weekends. However, I can make arrangements for additional time slots, subject to availability.",
+      "lateAnswer": "Certainly! I am available for notarizations every day of the week. My standard hours are from 9am to 6pm, but I can make arrangements for additional time slots, subject to availability.",
       "re": "Can I reschedule an appointment?",
       "reAnswer": "Absolutely, life happens! Appointments can be rescheduled without incurring any extra charges up to 30 minutes before the scheduled time. If rescheduling within the last 30 minutes, I may already be en route. In such cases, kindly reach out to me at (214)616-4549."
    },
