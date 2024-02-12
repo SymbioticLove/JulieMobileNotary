@@ -76,6 +76,10 @@ const ContactForm = () => {
       <h3>{disclaimer}</h3>
       <div>
         <h4>Request a Quote to Schedule an Appointment</h4>
+        <p>
+          What can we do for you? Please specify the number of signers and
+          describe the documents needing notarization
+        </p>
         <form onSubmit={handleSubmit} className="form" id="contact-form">
           <div className="form-left">
             <div className="form-row">
@@ -106,7 +110,7 @@ const ContactForm = () => {
             </div>
             <br />
             <div className="form-row">
-              <label htmlFor="location">Location (required)</label>
+              <label htmlFor="location">Suggested Location (required)</label>
               <input
                 type="text"
                 id="location"

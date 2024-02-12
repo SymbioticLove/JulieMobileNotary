@@ -1,27 +1,14 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import './Services.css';
+import pricesPDF from './prices.pdf'; // Import the PDF file
 
 const Services = () => {
   // Extract service and fee information from Redux store
-  const {
-    meetTitle,
-    meetText,
-    feesTitle,
-    feesSubtitle1,
-    feesSubtitle2,
-    feesSubtitle3,
-    notaryFees,
-    estateFees,
-    surcharges,
-    serviceTitle,
-    serviceText,
-  } = useSelector(state => state.about.services);
+  const { meetTitle, meetText, feesTitle, serviceTitle, serviceText } =
+    useSelector(state => state.about.services);
 
-  // Render items as paragraphs
-  const renderItems = items => {
-    return items.map((item, index) => <p key={index}>{item}</p>);
-  };
+  const isSmallScreen = window.innerWidth < 767;
 
   return (
     <div id="services-fees">
@@ -49,20 +36,21 @@ const Services = () => {
       <div className="fees">
         <h2>{feesTitle}</h2>
         <p className="feeDis">Subject to change without notice</p>
-        <div className="fee-container">
-          <div>
-            <h3>{feesSubtitle1}</h3>
-            {renderItems(notaryFees)}
-          </div>
-          <div>
-            <h3>{feesSubtitle2}</h3>
-            {renderItems(estateFees)}
-          </div>
-          <div className="surcharges">
-            <h3>{feesSubtitle3}</h3>
-            {renderItems(surcharges)}
-          </div>
-        </div>
+        {isSmallScreen ? (
+          // Render download link for small screens
+          <a href={pricesPDF} download="prices.pdf" className="prices-link">
+            View Prices
+          </a>
+        ) : (
+          // Embed PDF for larger screens
+          <embed
+            src={pricesPDF}
+            type="application/pdf"
+            width="100%"
+            height="600px"
+            style={{ border: 'none' }} // Add borderless style
+          />
+        )}
       </div>
     </div>
   );
