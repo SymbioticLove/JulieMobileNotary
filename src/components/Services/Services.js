@@ -1,14 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import './Services.css';
-import pricesPDF from './prices.pdf'; // Import the PDF file
+import pricesPDF from './prices.pdf'; // Import the PDF prices
+import pricesPNG from './prices.png'; // Import the PNG prices
+import mobilePNG from './mobilePrices.png'; //Import PNG mobile prices
 
 const Services = () => {
   // Extract service and fee information from Redux store
-  const { meetTitle, meetText, feesTitle, serviceTitle, serviceText } =
-    useSelector(state => state.about.services);
+  const { meetTitle, meetText, serviceTitle, serviceText } = useSelector(
+    state => state.about.services,
+  );
 
   const isSmallScreen = window.innerWidth < 767;
+
+  // State to track whether the PDF can be rendered
+  const [canRenderPDF, setCanRenderPDF] = useState(true);
+
+  // Function to handle PDF rendering error
+  const handlePDFError = () => {
+    setCanRenderPDF(false);
+  };
 
   return (
     <div id="services-fees">
@@ -34,22 +45,37 @@ const Services = () => {
       </div>
       {/* Display fees and surcharges */}
       <div className="fees">
-        <h2>{feesTitle}</h2>
-        <p className="feeDis">Subject to change without notice</p>
         {isSmallScreen ? (
-          // Render download link for small screens
-          <a href={pricesPDF} download="prices.pdf" className="prices-link">
-            View Prices
-          </a>
+          // Render download link with mobile image for small screens
+          <>
+            <img
+              src={mobilePNG}
+              alt="Mobile Prices"
+              style={{ width: '100%', height: 'auto', marginBottom: '1rem' }}
+            />
+            <a
+              href={canRenderPDF ? pricesPDF : pricesPNG}
+              download={canRenderPDF ? 'prices.pdf' : 'prices.png'}
+              className="prices-link"
+            >
+              View Prices
+            </a>
+          </>
         ) : (
-          // Embed PDF for larger screens
-          <embed
-            src={pricesPDF}
-            type="application/pdf"
+          // Embed PDF or PNG based on rendering capability
+          <object
+            data={canRenderPDF ? pricesPDF : pricesPNG}
+            type={canRenderPDF ? 'application/pdf' : 'image/png'}
             width="100%"
             height="600px"
-            style={{ border: 'none' }} // Add borderless style
-          />
+          >
+            <img
+              src={pricesPNG} // Fallback image if PDF cannot be rendered
+              alt="Prices"
+              style={{ width: '100%', height: '600px', border: 'none' }}
+              onError={handlePDFError}
+            />
+          </object>
         )}
       </div>
     </div>
