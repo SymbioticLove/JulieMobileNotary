@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.506c8f7d.css",
-    "main.js": "/static/js/main.9b8a614a.js",
+    "main.js": "/static/js/main.f95ee8eb.js",
     "static/js/787.ce35c262.chunk.js": "/static/js/787.ce35c262.chunk.js",
-    "static/media/prices.png": "/static/media/prices.ef5a038e930bd81edfcf.png",
-    "static/media/mobilePrices.png": "/static/media/mobilePrices.e843defe3e42c885774b.png",
+    "static/media/prices.png": "/static/media/prices.7123e8cf00e028c6c969.png",
+    "static/media/mobilePrices.png": "/static/media/mobilePrices.1ef7f869861f089d4c94.png",
+    "static/media/prices.pdf": "/static/media/prices.e9665a92363217872d50.pdf",
     "static/media/signature-contract.jpg": "/static/media/signature-contract.21ec46cb695d0794664f.jpg",
     "static/media/business.jpg": "/static/media/business.3df75faa9dad0b7bbb65.jpg",
-    "static/media/prices.pdf": "/static/media/prices.b62b01edd6fb5c3386eb.pdf",
     "index.html": "/index.html",
     "main.506c8f7d.css.map": "/static/css/main.506c8f7d.css.map",
-    "main.9b8a614a.js.map": "/static/js/main.9b8a614a.js.map",
+    "main.f95ee8eb.js.map": "/static/js/main.f95ee8eb.js.map",
     "787.ce35c262.chunk.js.map": "/static/js/787.ce35c262.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.506c8f7d.css",
-    "static/js/main.9b8a614a.js"
+    "static/js/main.f95ee8eb.js"
   ]
 }
